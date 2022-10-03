@@ -1,7 +1,6 @@
 .App {
   display: grid;
   gap: 47px;
-  
 }
 
 .main-title {
@@ -17,7 +16,11 @@
     height: 124px;
     font-size: 34px;
   }
-  
+}
+
+.lizing-form {
+  display: grid;
+  gap: 47px;
 }
 
 .checkout {
@@ -30,11 +33,14 @@
   border-radius: 40px;
   padding: 8px 16px 12px;
   border: none;
-  // justify-self: end;
   &:hover {
     background: #111111;
     color: #fff;
     cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 
   @media (max-width: 1024px) {
@@ -84,7 +90,7 @@
   }
 }
 
-.leasingAmountAgreement, .MonthlyPayment {
+.leasingAmountAgreement, .monthlyPayment {
   display: grid;
 }
 
